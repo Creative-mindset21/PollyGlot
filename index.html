@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CUSTOM META TAGS -->
+    <meta name="author" content="Creative Mindset" />
+    <meta
+      name="description"
+      content="PollyGlot - A Text Translation Web Application"
+    />
+
+    <!-- CSS LINKING -->
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- TITLE -->
+    <title>PollyGlot - Perfect Translation</title>
+  </head>
+
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="container">
+      <a href="#" class="header-link">
+        <img src="./src/assets/logo.png" alt="logo" />
+
+        <div>
+          <h1>PollyGlot</h1>
+          <p>Perfect Translation Every Time</p>
+        </div>
+      </a>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="container">
+      <form>
+        <section class="input-section">
+          <h2>Text to translate 👇</h2>
+
+          <textarea name="inputText" id="inputText" required></textarea>
+        </section>
+
+        <section class="language-section">
+          <h2>Select language 👇</h2>
+
+          <div class="languages">
+            <input
+              type="radio"
+              name="languageInput"
+              id="french"
+              value="french"
+              tabindex="0"
+              required
+            />
+            <label for="french">French </label>
+            <br />
+
+            <input
+              type="radio"
+              name="languageInput"
+              id="spanish"
+              value="spanish"
+              tabindex="0"
+              required
+            />
+            <label for="spanish">Spanish</label>
+            <br />
+
+            <input
+              type="radio"
+              name="languageInput"
+              id="japanese"
+              value="japanese"
+              tabindex="0"
+              required
+            />
+            <label for="japanese">Japanese</label>
+            <br />
+          </div>
+        </section>
+
+        <section class="output-section">
+          <h2>Text to translate 👇</h2>
+
+          <textarea name="outputText" id="outputText" readonly></textarea>
+        </section>
+
+        <button type="submit" class="btn" aria-live="polite" id="btn">
+          Translate
+        </button>
+      </form>
+    </main>
+
+    <script src="./src/main.ts" type="module"></script>
+  </body>
+</html>
