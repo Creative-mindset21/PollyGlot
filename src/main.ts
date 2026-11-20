@@ -86,6 +86,7 @@ formEl.addEventListener("submit", async (e) => {
       input: `${objEntries.inputText} to ${objEntries.languageInput}`,
     });
     outputTextEl.textContent = response.output_text;
+    navigator.clipboard.writeText(response.output_text);
   } catch (err) {
     console.error("Translation failed:", err);
   } finally {
